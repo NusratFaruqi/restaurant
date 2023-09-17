@@ -1,0 +1,245 @@
+
+.cover-image {
+    position: relative;
+    text-align: center;
+    background-color: #333; 
+}
+
+.cover-image img {
+    width: 100%;
+    height: auto;
+    max-height: 500px; 
+    object-fit: cover;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.5); 
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+
+.restaurant-info {
+    
+    position: relative;
+    text-align: center;
+    padding: 1rem;
+   
+}
+
+.restaurant-images {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+    margin-top: 3rem;
+}
+
+.restaurant-images img {
+    max-width: 30%;
+    height: 20%;
+    margin: 0 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.restaurant-info, .menu, .order-form, .order-status, .drinks {
+    margin-bottom: 2rem;
+    padding: 2rem; 
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* For the common section headings */
+.restaurant-info h2, .menu h2, .order-form h2, .order-status h2, .drinks h2 {
+    margin-bottom: 0.5rem; 
+    font-size: 1.5rem; 
+}
+.menu-title {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.menu-image {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin-bottom: 1rem;
+}
+
+.menu-image img {
+    width: 100px; 
+    height: auto;
+}
+
+/* For the menu and drinks list styles */
+.menu-list, .drinks-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+}
+
+.menu-list li, .drinks-list li {
+    flex: 0 0 calc(25% - 20px); 
+    text-align: center;
+    background-color: #f7f7f7;
+    padding: 1rem; 
+    border-radius: 5px; /
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.item-container img {
+    width: 150px; 
+    height: auto;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.item-name, .item-price {
+    font-weight: bold;
+}
+
+
+.menu-list, .drinks-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-between; 
+    flex-wrap: wrap; 
+}
+
+.menu-list li, .drinks-list li {
+    flex: 0 0 calc(33.33% - 20px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 1rem;
+    text-align: center;
+}
+
+.menu-list li img, .drinks-list li img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.menu-list li .item-name, .drinks-list li .item-name, .menu-list li .item-price, .drinks-list li .item-price {
+    font-weight: bold;
+}
+
+.menu-list li .item-price, .drinks-list li .item-price {
+    margin-left: auto;
+}
+.drinks h2 {
+    text-align: center;
+}
+.drinks img{
+    height: 280px;
+}
+.drink-images{
+    display: flex;
+    gap:10px;
+    justify-content: center;
+}
+
+.order-form label, .order-form input, .order-form select, .order-form button {
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.order-form select {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.order-form button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.flex {
+    display: flex;
+    gap:20px
+}
+#error {
+    color: red;
+    margin: 20px 0;
+}
+.order-status p {
+    font-weight: bold;
+}
+
+#login-form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+}
+#login-form fieldset > div {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+#login-form > fieldset {
+    padding: 40px 40px;
+}
+#login-form button[type=submit] {
+    display: block;
+    margin: 20px auto;
+}
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0; 
+}
+
+

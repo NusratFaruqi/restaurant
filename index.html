@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Food Delivery Website</title>
+</head>
+<body>
+    <div class="cover-image">
+        <img src="assets/cover4.jpg" alt="Cover Image">
+    </div>
+    <header>
+        <h1>Food Delivery</h1>
+    </header>
+    <main>
+        <section class="restaurant-info">
+            <h2>Restaurant Information</h2>
+            <p style="color: cadetblue;">Amigo</p>
+            <p style="color: red;">Uttara,Dhaka</p>
+            <div class="restaurant-images">
+                <img src="assets/info.jpg" alt="Restaurant Interior">
+                <img src="assets/info1.jpg" alt="Restaurant Food">
+                <img src="assets/info3.jpg" alt="Restaurant Food">
+            </div>
+        </section>
+     <section class="menu">
+            <h2 class="menu-title">Menu</h2>
+            <ul class="menu-list">
+                <li>
+                    <div class="item-container">
+                        <img src="assets/burger.webp" alt="Burger">
+                        <span class="item-name">Burger</span>
+                        <span class="item-price">250 tk-</span>
+                    </div>
+                  </li>
+                <div class="menu-image">
+                    <img src="assets/image1.jpg" alt="Menu Icon">
+                </div>
+                <li>
+                    <div class="item-container">
+                        <img src="assets/pizza.webp" alt="Pizza">
+                        <span class="item-name">Pizza</span>
+                        <span class="item-price">850 tk-</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="item-container">
+                        <img src="assets/nachos.webp" alt="Nachos">
+                        <span class="item-name">Nachos</span>
+                        <span class="item-price">240 tk-</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="item-container">
+                        <img src="assets/momo.webp" alt="Momo">
+                        <span class="item-name">Momo</span>
+                        <span class="item-price">330 tk-</span>
+                    </div>
+                </li>
+            </ul>
+
+        </section>
+        <section class="drinks">
+            <h2>Drinks</h2>
+            <div class="drink-images">
+                <img src="assets/coke.jpg" alt="Drink 1">
+                <img src="assets/abhishek-hajare-kkrXVKK-jhg-unsplash.jpg" alt="Drink 2">
+                <img src="assets/collab-media-jLZ-xt1r4_E-unsplash.jpg" alt="Drink 3">
+                <img src="assets/farhad-ibrahimzade-7D_X4RHy1JQ-unsplash.jpg" alt="Drink 1">
+                <img src="assets/paradigm-visuals-Tl_YI6wdNIE-unsplash.jpg" alt="Drink 2">
+              </div>
+        </section>
+        <section class="order-form" style="background-color: aliceblue;">
+            <h2>Login</h2>
+
+                <form id="login-form">
+                    <fieldset>
+                        <div>
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" placeholder="example@gmail.com" required>
+                        </div>
+
+                        <div>
+                            <label for="password">Password:</label>
+                            <input type="password" id="password" required placeholder="*******">
+                        </div>
+                        <button type="submit">Login</button>
+                    </fieldset>
+                </form>
+            <hr>
+            <br>
+            <br>
+
+            <h2>Place Your Order</h2>
+            <form id="order-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+                
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone">
+                <span id="error"></span>
+                
+                <label for="address">Address:</label>
+                <input type="text" id="address" required>
+
+                <label for="date">Date:</label>
+                <input type="date" id="date" >
+
+                <br>
+                <label for="food-select">Select Food:</label>
+                <select id="food-select" required>
+                    <option value="" disabled selected>Select a food item</option>
+                </select>
+                
+                <label for="pref">Preference</label>
+                <div class="flex">
+                    <input type="checkbox" name="pref" id="Spicy" value="SPICY">
+                    <label for="Spicy">Spicy</label>
+                </div>
+                <div class="flex">
+                    <input type="checkbox" name="pref" id="E_C" value="E_C">
+                    <label for="E_C">Extra Cheeeeeez</label>
+                </div>
+
+                <br>
+                <br>
+                <div class="flex">
+                <label for="qty">Quantity:</label>
+                <input type="number" id="qty" max="5" min="1" step="1" value="1">
+            </div>
+                <br>
+                <label for="drink-select">Select Drink:</label>
+                <select id="drink-select" required>
+                    <option value="" disabled selected>Select a drink item</option>
+                </select>
+                <br>
+                <br>
+                <label for="pay">Payment Method</label>
+                <div class="flex">
+                    <input type="radio" name="pay" id="Bkash" value="Bkash">
+                    <label for="Bkash">Bkash</label>
+                </div>
+                <div class="flex">
+                    <input type="radio" name="pay" id="Nagad" value="Nagad">
+                    <label for="Nagad">Nagad</label>
+                </div>
+
+                <div class="flex">
+                    <input type="radio" name="pay" id="Credit" value="Credit_Debit">
+                    <label for="Credit">Credit/Debit Card</label>
+                </div>
+
+                <div class="flex">
+                    <input type="radio" name="pay" id="Cash" value="Cash">
+                    <label for="Cash">Cash</label>
+                </div>
+
+                <br>
+                <br>
+
+                <div class="flex">
+                    <label for="code">PROMO CODE</label>
+                    <input type="text" name="code" id="code" placeholder="MEGA25" pattern="[A-Z]{4}[0-9]{2}">
+                </div>
+                <button type="submit">Submit Order</button>
+            </form>
+        </section>
+        <section class="order-status">
+            <h2>Order Status</h2>
+            <p id="confirmation-message"></p>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>&copy; 2023 --- Amigo --- All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
